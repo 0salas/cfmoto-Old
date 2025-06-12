@@ -302,29 +302,56 @@ const Form = () => {
               }}
             >
              <Select
-                  fullWidth
-                  variant="filled"
-                  name="state"
-                  displayEmpty
-                  onBlur={handleBlur}
-                  onChange={(e) => {
-                    setFieldValue("state", e.target.value);
-                    setState(e.target.value); // Update state
-                  }}
-                  value={values.state}
-                  error={touched.state && Boolean(errors.state)}
-                  sx={{ gridColumn: "span 4" }}
-                >
-                  <MenuItem disabled value="">
-                    <em>Estado en que circula la moto</em>
-                  </MenuItem>
-                  <MenuItem value="CDMX">CDMX</MenuItem>
-                  <MenuItem value="ESTADO DE MEXICO">ESTADO DE MEXICO</MenuItem>
-                  <MenuItem value="OAXACA">OAXACA</MenuItem>
-                  <MenuItem value="VERACRUZ">VERACRUZ</MenuItem>
-                  <MenuItem value="GUADALAJARA">JALISCO</MenuItem>
-                </Select>
-  
+                    fullWidth
+                    variant="filled"
+                    name="state"
+                    displayEmpty
+                    onBlur={handleBlur}
+                    onChange={(e) => {
+                      setFieldValue("state", e.target.value);
+                      setState(e.target.value); // Update state
+                    }}
+                    value={values.state}
+                    error={touched.state && Boolean(errors.state)}
+                    sx={{ gridColumn: "span 4" }}
+                  >
+                    <MenuItem disabled value="">
+                      <em>Estado en que circula la moto</em>
+                    </MenuItem>
+                    <MenuItem value="CIUDAD DE MEXICO">CIUDAD DE MEXICO</MenuItem>
+                    <MenuItem value="AGUASCALIENTES">AGUASCALIENTES</MenuItem>
+                    <MenuItem value="BAJA CALIFORNIA NORTE">BAJA CALIFORNIA NORTE</MenuItem>
+                    <MenuItem value="BAJA CALIFORNIA SUR">BAJA CALIFORNIA SUR</MenuItem>
+                    <MenuItem value="CAMPECHE">CAMPECHE</MenuItem>
+                    <MenuItem value="COAHUILA">COAHUILA</MenuItem>
+                    <MenuItem value="COLIMA">COLIMA</MenuItem>
+                    <MenuItem value="CHIAPAS">CHIAPAS</MenuItem>
+                    <MenuItem value="CHIHUAHUA">CHIHUAHUA</MenuItem>
+                    <MenuItem value="DURANGO">DURANGO</MenuItem>
+                    <MenuItem value="GUANAJUATO">GUANAJUATO</MenuItem>
+                    <MenuItem value="GUERRERO">GUERRERO</MenuItem>
+                    <MenuItem value="HIDALGO">HIDALGO</MenuItem>
+                    <MenuItem value="JALISCO">JALISCO</MenuItem>
+                    <MenuItem value="ESTADO DE MEXICO">ESTADO DE MEXICO</MenuItem>
+                    <MenuItem value="MICHOACAN">MICHOACAN</MenuItem>
+                    <MenuItem value="MORELOS">MORELOS</MenuItem>
+                    <MenuItem value="NAYARIT">NAYARIT</MenuItem>
+                    <MenuItem value="NUEVO LEON">NUEVO LEON</MenuItem>
+                    <MenuItem value="OAXACA">OAXACA</MenuItem>
+                    <MenuItem value="PUEBLA">PUEBLA</MenuItem>
+                    <MenuItem value="QUERETARO">QUERETARO</MenuItem>
+                    <MenuItem value="QUINTANA ROO">QUINTANA ROO</MenuItem>
+                    <MenuItem value="SAN LUIS POTOSI">SAN LUIS POTOSI</MenuItem>
+                    <MenuItem value="SINALOA">SINALOA</MenuItem>
+                    <MenuItem value="SONORA">SONORA</MenuItem>
+                    <MenuItem value="TABASCO">TABASCO</MenuItem>
+                    <MenuItem value="TAMAULIPAS">TAMAULIPAS</MenuItem>
+                    <MenuItem value="TLAXCALA">TLAXCALA</MenuItem>
+                    <MenuItem value="VERACRUZ">VERACRUZ</MenuItem>
+                    <MenuItem value="YUCATAN">YUCATAN</MenuItem>
+                    <MenuItem value="ZACATECAS">ZACATECAS</MenuItem>
+                  </Select>
+
                 <Select
                   fullWidth
                   variant="filled"
@@ -343,7 +370,6 @@ const Form = () => {
                     <em>Modelo de Moto</em>
                   </MenuItem>
                   <MenuItem value="2025">2025</MenuItem>
-                  <MenuItem value="2024">2024</MenuItem>
                 </Select>
   
                 <Select
