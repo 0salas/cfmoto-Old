@@ -370,6 +370,7 @@ const Form = () => {
                     <em>Modelo de Moto</em>
                   </MenuItem>
                   <MenuItem value="2025">2025</MenuItem>
+                  <MenuItem value="2026">2026</MenuItem>
                 </Select>
   
                 <Select
