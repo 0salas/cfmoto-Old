@@ -244,7 +244,7 @@ const Form = () => {
                     ¡Bienvenido!
                   </Typography>
                   <img
-                    src="/informacionTdc.jpeg" // Replace with actual image URL
+                    src="/informacionTDC.jpeg" // Replace with actual image URL
                     alt="Informative"
                     style={{ width: "100%", borderRadius: "10px", marginTop: "10px" }}
                   />
